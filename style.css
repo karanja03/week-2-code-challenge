@@ -1,9 +1,10 @@
+
 body{
     background-color: lightblue;
 }
 #intro{
     text-align: center;
-    color: darkblue;
+    color:blue
 }
 #moreinfo{
     text-align: center;
@@ -15,4 +16,7 @@ body{
     font-weight: 400;
     font-size: large;
     padding-left:600px ;
+}
+button{
+    color: black;
 }
