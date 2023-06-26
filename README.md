@@ -1,54 +1,75 @@
-# week-2-code-challenge
+# Animal Voting App
 
-# Animal Voting System
-The Animal Voting System is a web application that allows users to vote for the cutest animal among a list of contestants. Users can click on an animal's name to view its information and vote for it. The voting system keeps track of the vote count for each animal.
+The Animal Voting App is a web application that allows users to vote for their favorite animals. The app displays a list of animals, and users can click on a button to view more information about each animal, including their name, image, and number of votes. Users can then vote for their favorite animal, and the vote count is updated in real-time.
 
+## Getting Started
 
-# Features
-1.Display a list of animal contestants.
-2.View detailed information about each animal.
-3.Vote for the cutest animal.
-4.Persist the vote count using local storage.
-5.Prerequisites
-6.Before running the Animal Voting System, make sure you have the following installed on your system:
+To run the Animal Voting App locally, follow these steps:
 
-# Node.js:
- The application is built using Node.js and requires it to be installed. You can download and install Node.js from the official website: https://nodejs.org
-# Getting Started
-Installation
-# Clone the repository to your local machine:
+1. Clone the repository to your local machine.
 
-Copy code
-git clone https://github.com/your-username/animal-voting-system.git
-Navigate to the project directory:
-cd animal-voting-system
-# Install the project dependencies using npm:
+2. Open the `index.html` file in a web browser.
 
-npm install
-Running the Application
-# Start the development server:
+## Usage
 
-json-server --watch db.json
-This will launch the application and serve it on http://localhost:3000.
+### Viewing Animal Information
 
-Open your web browser and visit http://localhost:3000 to access the Animal Voting System.
+1. Upon launching the app, you will see a list of animals displayed.
 
-# Usage
--On the home page, you will see a list of animal contestants.
+2. Each animal is represented by a button labeled "select contestant." Clicking on this button will display more information about the animal, including their name, image, and vote count.
 
--Click on an animal's name to view its information.
+3. You can view the details of each animal by clicking on their respective "select contestant" button.
 
--The information section displays the animal's name, image, and the current vote count.
+### Voting for an Animal
 
--Click on the "Vote for [Animal Name]" button to cast your vote.
+1. After clicking on the "select contestant" button, the animal's information will be displayed, including their name, image, and vote count.
 
--The vote count will be updated, and you will see the new vote count displayed.
+2. To vote for the animal, click on the "Vote for [name]" button. The vote count will be incremented by 1, and the updated count will be displayed.
 
--You can vote for multiple animals.
+### Adding a New Animal
 
--The vote count is persisted using local storage, so if you refresh the page, the vote count will remain the same.
+1. To add a new animal to the list, scroll down to the bottom of the page.
 
+2. You will find a form labeled "Add Animal."
 
+3. Enter the name of the animal in the "Animal Name" input field and the URL of the animal's image in the "Image URL" input field.
 
-License
-This project is licensed under the MIT License. 
+4. Click the "Add Animal" button to submit the form.
+
+5. The new animal will be added to the list, and you can click on the "select contestant" button to view and vote for the newly added animal.
+
+## Customization
+
+You can customize the Animal Voting App by making the following modifications:
+
+1. Change the `animalIds` array in the JavaScript code to include different animal IDs. Each ID corresponds to a specific animal.
+
+2. Update the `buttonText` variable in the JavaScript code to change the text displayed on the "select contestant" buttons.
+
+3. Modify the API endpoint in the `fetch` function to fetch animal data from a different source.
+
+## Technologies Used
+
+The Animal Voting App is built using the following technologies:
+
+- HTML
+- CSS
+- JavaScript
+
+## Contributing
+
+If you'd like to contribute to the Animal Voting App, please follow these steps:
+
+1. Fork the repository.
+
+2. Create a new branch for your feature or bug fix.
+
+3. Make your changes and commit them with descriptive commit messages.
+
+4. Push your changes to your forked repository.
+
+5. Submit a pull request, explaining your changes and their purpose.
+
+## License
+
+The Animal Voting App is open source and released under the [MIT License](https://opensource.org/licenses/MIT).
